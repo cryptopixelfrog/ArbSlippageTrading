@@ -45,6 +45,7 @@ I am using Grid for this project, and this is my first time to use Grid and Geth
 #### Download and Config Geth in Grid
 - You can download the most up to date Geth and install it under Grid.
 - Config Geth
+<img src="doc/img/grid-config.png">
     - Selecting Light Sync Mode may be a good idea to save storage space on your work computer. I do use Light, but it still takes about 13GB of my storage.
     - Select Enabled for All Origins for HTTP RPC API, so we can fork the node via ganache-cli.
     - Select "Yes, All Origins (*)" for Enable GraphQL Server, so we can use Grid's GraphQL tool to check details of data in blockchain.
@@ -84,6 +85,7 @@ I had below error msg in my transaction on forked node. I had set chainId(networ
 --- This is optional, but I realized that having the same ganache accounts everytime when I fork the node is easy for me to manage my test. Just adding "-d" option to have dedicated accounts.
 
 ### 4. Connect Metamask with forked node via Custom RPC
+<img src="doc/img/metamask-setting.png" width="300">
 
 ### 5. Set truffle-config.js
 Don't confuse the port number. 8546 is what the forked node is listening, and 8545 is where the forked node is located. Metamask Custom RPC and nodejs app setting is 8546!
